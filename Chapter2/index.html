@@ -1,0 +1,25 @@
+<!doctype>
+<html>
+<head>
+<title>Origami frog</title>
+<script>
+  var boogie = new Image();
+  var smile = new Image();
+  boogie.src = "Boogie-01.jpg";
+  smile.src = "smile.jpg";
+  var ctx;
+  function init(){
+    ctx = document.getElementById("canvas").getContext('2d');
+    ctx.drawImage(boogie,10,20,100,100);
+    ctx.drawImage(smile,150,150,120,120);
+    
+  }
+  </script>
+</head>
+<body onLoad = "init();">
+<canvas id = "canvas" width = "400" height = "300">
+  Your browser doesn't support the HTML5 element canvas so send this to hell...
+</canvas>
+</body>
+
+</html>
